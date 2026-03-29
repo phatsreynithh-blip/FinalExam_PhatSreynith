@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <style>
+        body { font-family: 'Khmer OS Battambang', sans-serif; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechCon 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#speakers">វាគ្មិន</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">សំណួរចម្លើយ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">ស្វាគមន៍មកកាន់ Tech Conference 2026</h1>
+            <p class="lead mb-4">ចូលរួមស្វែងយល់ពីបច្ចេកវិទ្យាថ្មីៗជាមួយអ្នកជំនាញទូទាំងពិភពលោក។</p>
+            <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">
+                ចុះឈ្មោះឥឡូវនេះ
+            </button>
+        </div>
+    </section>
+
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ទម្រង់ចុះឈ្មោះ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatName" placeholder="ឈ្មោះ">
+                        <label for="floatName">ឈ្មោះ</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatEmail" placeholder="អ៊ីមែល">
+                        <label for="floatEmail">អ៊ីមែល</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">បោះបង់</button>
+                    <button type="button" class="btn btn-primary">យល់ព្រម</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="speakers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">វាគ្មិនកិត្តិយស</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="វាគ្មិន">
+                        <div class="card-body"><h5 class="card-title">វាគ្មិនទី ១</h5></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="វាគ្មិន">
+                        <div class="card-body"><h5 class="card-title">វាគ្មិនទី ២</h5></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="វាគ្មិន">
+                        <div class="card-body"><h5 class="card-title">វាគ្មិនទី ៣</h5></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="វាគ្មិន">
+                        <div class="card-body"><h5 class="card-title">វាគ្មិនទី ៤</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5">
+        <div class="container w-75">
+            <h2 class="text-center mb-4">FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            តើកម្មវិធីនេះចាប់ផ្តើមនៅពេលណា?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">កម្មវិធីនឹងចាប់ផ្តើមនៅថ្ងៃទី ១៥ ខែតុលា ឆ្នាំ ២០២៦។</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                            តើខ្ញុំអាចចុះឈ្មោះដោយរបៀបណា?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">អ្នកអាចចុះឈ្មោះបានតាមរយៈប៊ូតុង "ចុះឈ្មោះឥឡូវនេះ" នៅផ្នែកខាងលើ។</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
